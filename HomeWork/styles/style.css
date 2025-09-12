@@ -1,0 +1,18 @@
+body{ 
+    background-color: #a4d192;
+}
+
+.offer{
+    background-color: #8dd5d8;
+    border-radius: 10px;
+    padding: 20px;
+  
+}
+.offer-list{
+    background-color: #72540e;
+   border: 8px solid #0a030a;
+    border-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    
+}

@@ -6,10 +6,10 @@ body{
     font: 400 18px/28px Inter, sans-serif;   
 }
 
-.container-header{
+.container{
     width: 1440px;
     margin: 0 auto ;
-    
+ 
 }
 
 .header{
@@ -86,25 +86,39 @@ body{
  
 
 .footer{
+   
+    background: #19191C;      
+    margin: 0; 
+    padding: 0;
+    
+    
+}
+.wraper{
     display: flex;
     flex-direction: column;
-    background: #19191C;    
-    height: 536px;    
+    height: 476px; 
     justify-content: space-between;
+    padding: 68px 240px 0 240px;
+    margin: 0 ;
+
+   
 }
-.footer-box{
+.footer-content{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin: 68px 240px 0 240px;
+    margin: 0 ;
+    padding: 0;
+    
+  
+    
     
 }
 .support-logo{
     display: flex;
     flex-direction: column;
     gap: 48px;
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
 } 
 .support{
     font: 600 24px/28px Inter, sans-serif;

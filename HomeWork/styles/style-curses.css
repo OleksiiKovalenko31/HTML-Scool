@@ -1,0 +1,353 @@
+/*<section class="offer">*/
+.offer {
+    height: 958px;
+    display: flex;   
+    position: relative; 
+  
+    background-image: 
+        url(../img/girl.png),        
+        url(../img/rectangle_107.png),
+        url(../img/ellipse21.png),
+        url(../img/ellipse_22.png);
+     
+        
+    background-repeat: 
+        no-repeat, 
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: 
+        right 70px bottom,
+        right 270px bottom,
+        right 40px center,
+        right 330px  bottom;        
+    background-size: 
+        831px 751px,
+        467px 534px,
+        404px 404px,
+        680px 399px;
+    
+}
+.offer-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none; 
+    left: 810px;
+    top: 137px; ;
+    height: 811px;
+    width: 900px;
+    z-index: 2;
+    position: relative;  
+}
+
+
+.offer-holder {
+    width: 648px; 
+    height: 595.4px;
+    position: absolute;
+    left: 240px;
+    top: 181px;
+    background: url(../img/ellipse_20.png);
+    background-repeat: no-repeat;
+    background-size: 584px 584px;
+    background-position:left center;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+  
+}
+.months{
+    border-bottom: 4px solid #504DEE ;
+    width: max-content;
+    font: 700 18px/100% 'Inter'; 
+    color: #19191C;
+    margin: 0;
+    padding: 0;
+}
+.profession{    
+    width: max-content;
+    font: 400 18px/28px 'Inter'; 
+    color: #19191C;
+    position: relative;
+    top: 33px;
+}
+.offer-title { 
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 100%;
+    color:#19191C;    
+    padding: 0;
+    margin: 0
+}
+.offer-discription{
+    font: 400 18px/28px 'Inter'; 
+    color:#19191C;
+    height: 648px;
+
+    position: absolute;
+    top: 210px ;
+}
+
+.button-start{
+    border: none;
+    background:#504DEE;
+    width: max-content;
+   
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: #FBFBFC ;
+
+    position: absolute;
+    /* top: center; */
+    top: 372px;
+    padding: 16px 37px;
+}
+.offer-promo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 88%;
+}
+.offer-time{
+    font: 700 18px/100% 'Inter'; 
+    color:#19191C;
+    padding: 8px 0px;
+    margin: 0;
+}
+.offer-sale{
+    font: 700 58px/100% 'Inter'; 
+    color:#19191C;
+    padding: 0;
+    margin: 0;
+}
+.time{
+    padding: 12px;
+}
+
+
+
+.list-border{
+    text-decoration: none;
+    border: #19191C 2px  solid;
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 16px 36px;
+    color:#19191C;
+    font: 600 18px/28px 'Inter', bold sans-serif;
+
+}
+.invision{
+   position: absolute;
+    top: 86px;
+    left: 726px;
+}
+.protopie{
+    position: absolute;
+    top: 0px;
+    left: 473px;
+}
+.miro{
+    position: absolute;
+    top: 64px;
+    left: 214px;
+}
+.photoshop{
+    position: absolute;
+    top: 236px;
+    left: 118px;
+}
+.figma{
+    position: absolute;
+    top: 393px;
+    left: 0px;
+}
+.illustrator{
+    position: absolute;
+    top: 570px;
+    left: 36px;
+}
+
+/* -------------------------- */
+/* <section class="profession-designer">  */
+.profession-designer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font: 600 18px/28px 'Inter';
+    color:#19191C;
+    padding: 0 240px;
+}
+.profession-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 168px 0
+}
+.latin-description{
+    color: #6D6D77;
+}
+.salary-price{
+    margin: 58px 0 0 0;
+}
+.vacancies-offers{
+    margin: 58px 0 0 0;
+}
+.box-name{
+    margin: 0;
+    padding: 21 0 24px 0;
+
+}
+.salary-box{
+    padding: 0;
+    margin: 0;
+}
+
+
+.vacancies-box{
+    padding: 0;
+    margin: 0;
+   
+}
+
+.title{
+    font: 700 58px/100% 'Inter';
+    color:#19191C;
+}
+.description-title{
+    font: 700 34px/100% 'Inter';
+    color:#19191C;
+    
+}
+.text-big{
+    padding: 0;
+    margin: 0;
+}
+.description-text{
+    font: 400 18px/28px 'Inter';
+    color:#19191C;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.profession-box{
+    width: 588px;
+}
+.box-name{
+    width:254px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.name{
+    border-bottom: 4px solid #19191C;
+    padding: 0  0 21px 0;
+}
+
+.description-box{ 
+   padding:  48px 68px ;
+}
+.portfolio-box{
+   
+    background: #DEEFE4;
+    
+}
+.internship-box{
+  
+    background: #F3F3D7; /*Для мене не зрозуміло, чому браузер і Figma один код кольору показує по-різному*/
+}
+.certificate-box{
+    
+    background: #EFDEEE;
+}
+.description-title{
+    border-bottom: 4px solid #19191C;
+    padding:0 0 28px 0 ;
+
+}
+/* --------------------------------------- */
+/* <section class="price"> */
+.price{
+    display: flex;
+    flex-direction: column;
+    padding: 171px 240px 168px 240px;
+    font: 700 58px/100% 'Inter';
+    color:#19191C;
+
+}
+
+.price-text{
+    width: 594px;
+}
+.price-offer-box{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    
+}
+.price-offer{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* justify-content: space-between; */
+    padding: 0;
+    margin: 0;
+    height: 685px;
+    
+    background-color:#DEEFE4;
+    padding: 48px 38px 51px 68px;
+
+}
+.optimal{
+    background:#504DEE;
+    color:#FBFBFC
+}
+.button-offer{
+    padding: 16px 36px;
+    border: none;
+    width: max-content;
+    background: #19191C;
+    color: #F3F3D7;
+}
+.optimal-choose{
+    background:#FBFBFC;
+    color:#504DEE
+}
+.list-offer-box li{
+    font: 400 18px/28px 'Inter';
+    margin-bottom: 22px;
+       
+}
+.list-offer-box  li:last-child {
+  margin-bottom: 0;
+}
+
+.regular-price{
+    font: 700 24px/26px 'Inter';
+    color: #6D6D77 ; 
+    margin: 0;
+    padding: 0;   
+}
+.optimal-price{
+    color:#F3F3D7;
+
+}
+.price-title{
+    margin: 0 0 47px 0;
+    padding: 0;
+}
+
+.discont{
+  
+    margin: 15px 0 18px 0;
+    padding: 0 ;
+}
+.price-box{
+    margin-top: auto;
+    text-align: left;
+}

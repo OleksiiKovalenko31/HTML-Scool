@@ -1,0 +1,133 @@
+@media screen and (max-width: 1200px) {
+   /*<section class="offer">*/
+   .offer{
+      width: 100%;
+      height: max-content;
+      padding: 2%;
+      margin: 0;
+      position: static;
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      gap: 3px;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+    .offer-holder{
+      /* border: 2px solid #19191C; */
+      width: 100%;
+      /* height: auto; */
+      position:static;
+      display: flex;
+      flex-direction: column;
+      /* flex: 1 1 auto; */
+      gap: 5px;
+      padding: 0;
+      z-index: 0;
+      background-size: 70% 90%;
+      background-position:left 50% top 80%;
+
+   }
+   .months{
+      margin: 2% 0;
+   }
+   .profession{
+      position: static;
+      margin: 2% 0;
+   }
+   .offer-title{
+      position: static;
+      /* border: 2px solid #19191C; */
+      z-index: 0;
+   }
+   .offer-discription{
+      position: static;
+      z-index: 0;
+   }
+   .button-start{
+     position: static;
+     margin: 2% 0;
+      
+   }
+   .offer-promo{
+      position: static;
+   }
+   .offer-list-container{
+      width: 100%;
+      height: max-content;
+      /* border: 3px solid #19191C; */
+      position: relative;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      background-position: 
+        right -1% bottom,
+        right 5% bottom,
+        right 0% center,
+        right 25%  bottom 0;   
+      background-size: 
+         45%,
+         25%,
+         40%,
+         20%;
+     
+   }
+     .offer-list{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items:stretch;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+      gap: 5px;
+     }
+
+   .offer-list li{
+      display: inline-flex; 
+      justify-content: flex-start;
+      
+   }
+   
+   .list-border{
+      display: flex;
+      position:sticky;
+      padding: 1% 3%;
+      top:0;
+      left: 0;
+      width: max-content;
+   }
+    /*--------------------------------------------- */
+   /* <section class="profession-designer"> */
+   .profession-designer{
+      margin: 0;
+      padding: 2%;
+   }
+   .profession-title{
+      flex-direction: column;
+      padding: 2% 0;
+   }
+   .profession-box{
+      width: 100%
+
+   }
+   .description{
+      flex-direction: column;
+   }
+   /* ---------------------------------------------- */
+   /* <section class="price"> */
+   .price{
+      width: 100%;
+      padding: 2%;
+   }
+     .price-text{
+      width: 100%;
+   }
+   .price-offer-box{
+      width: 100%;
+      flex-direction: column;
+   }
+
+}

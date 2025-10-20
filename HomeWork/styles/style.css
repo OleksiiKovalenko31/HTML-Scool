@@ -1,6 +1,4 @@
 body{ 
-    /* height: 1080px; */
-    width: 1920px;
     color: #19191C;
     margin: 0;   
     font: 400 18px/28px 'Inter', sans-serif;   
@@ -8,8 +6,8 @@ body{
 
 .container{
     width: 1440px;
-    margin: 0 auto ;
- 
+    margin: 0 auto;
+    position: relative; 
 }
 
 .header{
@@ -20,17 +18,34 @@ body{
 }   
 .header-box{
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 68px;
 }
+.nav{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.btn-box{
+   
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+      
+   }
 
 .nav-list{
+    
     display: flex;
     gap: 48px;
     margin: 0;
-    padding: 0;
+    padding: 2%;
     list-style: none;
-
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
@@ -44,12 +59,19 @@ body{
 }
 
 .btn-box{
-   
+    width: 30%;
     display: flex;
     gap: 48px;
     align-items: center;
    
+   
 }
+.header-block{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
 
   
 .logo{
@@ -76,6 +98,7 @@ body{
     background: #19191C;;
     color: #EFEFF2;
     padding: 12px 37px;
+    padding: 2% ;
     text-decoration: none;
     font-size: 18px;
     line-height: 22px;
@@ -83,35 +106,50 @@ body{
 
 }
 /* -------------------------- */
+/* <footer class="wraper footer container"> */
  
 
 .footer{
    
     background: #19191C;      
-    margin:  0 auto; 
-    padding: 0 auto;
+    margin:  0 ; 
+    padding:0 ;
+    gap: 3vh;
     
     
 }
 .wraper{
     display: flex;
     flex-direction: column;
-    height: 476px; 
+    /* height: 476px;  */
     justify-content: space-between;
     padding: 68px 240px 0 240px;
     margin: 0 auto;
 
    
 }
+.footer-content-block{
+    /* border: 3px solid #491a37; */
+    display: flex;
+    /* flex: ; */
+    justify-content: space-between;
+
+}
+.footer-support{
+    /* border: 3px solid #f5e50a; */
+    display: flex;
+    gap: 10%;
+    flex-direction: column;
+    margin: 0 12% 0 0;
+}
 .footer-content{
+    width: 100%;
+    /* border: 3px solid #3d0af5; */
     display: flex;
     justify-content: space-between;
     margin: 0 ;
     padding: 0;
-    
-  
-    
-    
+      
 }
 .support-logo{
     display: flex;
@@ -132,8 +170,7 @@ body{
 }  
 
       
-.logo-white{
-   
+.logo-white{   
     font: 800 18px/28px 'Inter';
     color:#EFEFF2;
     text-decoration: none;
@@ -145,9 +182,8 @@ body{
 
 
 .link-footer{
-    text-decoration: none;   
-    font: 400 'Inter';
-    font-size: 18px ;
+    text-decoration: none; 
+    font: 400 18px/28px 'Inter';
     color: #EFEFF2;
 }   
 
@@ -164,7 +200,6 @@ body{
  
 .sitemap-list{
     list-style: none;
-   
     display: flex;
     flex-direction: column;
     padding: 0;

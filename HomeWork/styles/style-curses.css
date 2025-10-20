@@ -2,9 +2,18 @@
 .offer {
     height: 958px;
     display: flex;   
-    position: relative; 
+    position: static;   
   
-    background-image: 
+}
+
+.offer-list-container{
+    position: relative;
+    right: 0;
+    top: 137px; ;
+    height: 811px;
+    width: 900px;
+    z-index: 2;
+     background-image: 
         url(../img/girl.png),        
         url(../img/rectangle_107.png),
         url(../img/ellipse21.png),
@@ -17,35 +26,29 @@
         no-repeat,
         no-repeat;
     background-position: 
-        right 70px bottom,
-        right 270px bottom,
-        right 40px center,
-        right 330px  bottom;        
+        right -120px bottom,
+        right 90px bottom,
+        right 0 center,
+        right 40%  bottom;        
     background-size: 
         831px 751px,
         467px 534px,
         404px 404px,
         680px 399px;
-    
+
 }
+
 .offer-list {
     display: flex;
     flex-direction: column;
-    list-style: none; 
-    left: 810px;
-    top: 137px; ;
-    height: 811px;
-    width: 900px;
-    z-index: 2;
-    position: relative;  
+    list-style: none;
 }
 
 
 .offer-holder {
     width: 648px; 
     height: 595.4px;
-    position: absolute;
-    left: 240px;
+    position: relative;
     top: 181px;
     background: url(../img/ellipse_20.png);
     background-repeat: no-repeat;
@@ -83,7 +86,7 @@
 .offer-discription{
     font: 400 18px/28px 'Inter'; 
     color:#19191C;
-    height: 648px;
+    /* height: 648px; */
 
     position: absolute;
     top: 210px ;
@@ -143,12 +146,12 @@
 .invision{
    position: absolute;
     top: 86px;
-    left: 726px;
+    right: 0;
 }
 .protopie{
     position: absolute;
-    top: 0px;
-    left: 473px;
+    top: 0;
+    left: 513px;
 }
 .miro{
     position: absolute;
@@ -179,7 +182,8 @@
     justify-content: space-between;
     font: 600 18px/28px 'Inter';
     color:#19191C;
-    padding: 0 240px;
+    /* padding: 0 240px; */
+    padding: 0; 
 }
 .profession-title{
     display: flex;
@@ -297,7 +301,7 @@
     /* justify-content: space-between; */
     padding: 0;
     margin: 0;
-    height: 685px;
+    /* height: 685px; */
     
     background-color:#DEEFE4;
     padding: 48px 38px 51px 68px;

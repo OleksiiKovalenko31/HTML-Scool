@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-style.css">
     <link rel="stylesheet" href="styles/style-curses.css">
+    <link rel="stylesheet" href="styles/media-curses.css">
     <title>courses</title>
 </head>
 
@@ -15,29 +17,35 @@
     <header  class="container header">
        <div class="header-box"> 
             <a class = "logo" href ="index.html"> 
-                <img src="img/logo.svg" alt="logo" width="50px" height="50px">
-                    UpDate 
-            </a>
+                    <img src="img/logo.svg" alt="logo" width="50px" height="50px">
+                        UpDate 
+                </a>                   
             <nav class="nav">
+                
                 <ul class="nav-list">
-                    <li><a class="link" href="#">Courses</a></li>
+                    <li><a class="link" href="courses.html">Courses</a></li>
                     <li><a class="link" href="#">Teachers</a></li>
                     <li><a class="link" href="#">Blog</a></li>
                 </ul>
             </nav>
         </div>
+
         <div class="btn-box">
-            <a class="header-link" href="#">
-                <span class="header-link-text">En</span>
-                <span class="header-link-arrow">&#9660;</span>
-            </a>
-            <a class="header-link" href="#">Sign in</a>
+            <div class="header-block">
+                <a class="header-link-block header-link" href="#">
+                    <span class="header-link-text">En</span>
+                    <span class="header-link-arrow">&#9660;</span>
+                </a>
+                <a class="header-link" href="#">Sign in</a>
+            </div>
+            
             <a class="header-button" href="#">Trial free</a>
         </div>
+        
     </header>
 
     <main>
-        <section class="offer">
+        <section class="offer container">
             <article class="offer-holder">
                 
                 <h6 class="months"> 6 months </h6>
@@ -58,26 +66,22 @@
                        
                     </p>  
                 </div>
-                        
             </article>
 
-         
+            <article class="offer-list-container ">          
                 <ul class="offer-list">
-                    <li> <a class="list-border invision" href="#"> InVision </a> </li>                         
+                    <li> <a class="list-border invision" href="#"> InVision </a> </li>
                     <li> <a class="list-border protopie" href="#"> ProtoPie </a> </li>
                     <li> <a class="list-border miro" href="#"> Miro </a> </li>
                     <li> <a class="list-border photoshop" href="#"> Photoshop </a> </li>
                     <li> <a class="list-border figma" href="#"> Figma </a> </li>
                     <li> <a class="list-border illustrator" href="#"> Illustrator </a> </li>
-                </ul>  
-
-              
-
-            </article  >
+                </ul>            
+            </article >
         </section>
 
 
-       <section class="profession-designer">       
+       <section class="profession-designer container ">       
             <article  class="profession-title">
                 <div class="profession-box">
                     <h2 class="profession-text title">
@@ -132,7 +136,7 @@
             </div> 
         </section>    
         
-        <section class="price">
+        <section class="price container container">
             <h2 class="price-text title"> Discover Our Prices </h2>
             <div class="price-offer-box">
                 <article class="base price-offer">
@@ -193,56 +197,61 @@
 
     </main>
 
-   <footer class="wraper footer">
-        <div class="footer-content ">
-            <div class="support-logo"  > 
-                <a class = "logo-white" href ="index.html">
-                    <img src="img/logo-white.svg" alt="logo" width="42px" height="36px">
-                        UpDate
-                </a>
-                <div class="support">
-                    <a class = "link-footer email " href="mailto:support@update.com">support@update.com</a>
-                    <a class = "link-footer phone" href ="tel:+12136771024">+1 (213) 677 10 24</a>
-                </div> 
-            </div>
-        s
-            <div class="sitemap">
-                <h6 class="sitemap-title"> Courses</h6>
-                    <ul class="sitemap-list">
-                    <li><a class = "link-footer" href="#">Animation</a></li>
-                    <li><a class = "link-footer" href="#">Design</a></li>
-                    <li><a class = "link-footer" href="#">Illustration</a></li>
-                    <li><a class = "link-footer" href="#">Programming</a></li>
-                     <li><a class = "link-footer" href="#">Photo & Film</a></li>               
-                     <li><a class = "link-footer" href="#">Marketing</a></li>     
-                </ul>
-            </div>
-                <div class="sitemap">
-                    <h6 class="sitemap-title">Teachers</h6>
-                    <ul class="sitemap-list">
-                        <li><a class="link-footer" href="#">All Teachers</a></li>
-                        <li><a class="link-footer" href="#">Become a Teacher</a></li>
-                        <li><a class="link-footer" href="#">For institutions</a></li> 
-                    </ul> 
-                </div>
-                <div class="sitemap"> 
-                    <h6 class="sitemap-title">Information</h6>
-                    <ul class="sitemap-list">
-                        <li><a class="link-footer" href="#">Blog</a></li>
-                        <li><a class="link-footer" href="#">About us</a></li>
-                        <li><a class="link-footer" href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="sitemap">
-                    <h6 class="sitemap-title">En</h6>  
-                    <ul class="sitemap-list">
-                        <li><a class = "link-footer" href="#">English</a></li>
-                        <li><a class = "link-footer" href="#">French</a></li>
-                        <li><a class = "link-footer" href="#">Ukrainian</a></li>
-                    </ul>
-                </div>
-            </div>
+    <footer class="wraper footer container">
         
+        <div class="footer-content-block">
+            <div class="footer-support">
+                <div class="support-logo"  >
+                    <a class = "logo-white" href ="index.html">
+                        <img src ="img/logo-white.svg" alt="logo" width="42px" height="36px">
+                            UpDate
+                    </a>
+                </div>
+                    <div class="support">
+                        <a class = "link-footer email " href="mailto:support@update.com">support@update.com</a>
+                        <a class = "link-footer phone" href ="tel:+12136771024">+1 (213) 677 10 24</a>
+                    </div> 
+                 </div>
+            
+            <div class="footer-content">
+                <div class="sitemap">
+                    <h6 class="sitemap-title"> Courses</h6>
+                        <ul class="sitemap-list">
+                        <li><a class = "link-footer" href="#">Animation</a></li>
+                        <li><a class = "link-footer" href="#">Design</a></li>
+                        <li><a class = "link-footer" href="#">Illustration</a></li>
+                        <li><a class = "link-footer" href="#">Programming</a></li>
+                        <li><a class = "link-footer" href="#">Photo & Film</a></li>
+                        <li><a class = "link-footer" href="#">Marketing</a></li>
+                    </ul>
+                </div>
+                    <div class="sitemap">
+                        <h6 class="sitemap-title">Teachers</h6>
+                        <ul class="sitemap-list">
+                            <li><a class="link-footer" href="#">All Teachers</a></li>
+                            <li><a class="link-footer" href="#">Become a Teacher</a></li>
+                            <li><a class="link-footer" href="#">For institutions</a></li>
+                        </ul>
+                    </div>
+                    <div class="sitemap">
+                        <h6 class="sitemap-title">Information</h6>
+                        <ul class="sitemap-list">
+                            <li><a class="link-footer" href="#">Blog</a></li>
+                            <li><a class="link-footer" href="#">About us</a></li>
+                            <li><a class="link-footer" href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="sitemap">
+                        <h6 class="sitemap-title">En</h6>
+                        <ul class="sitemap-list">
+                            <li><a class = "link-footer" href="#">English</a></li>
+                            <li><a class = "link-footer" href="#">French</a></li>
+                            <li><a class = "link-footer" href="#">Ukrainian</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
         </div>
             
         <div class="copyright">

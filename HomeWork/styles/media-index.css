@@ -1,0 +1,206 @@
+@media screen and (max-width: 1200px) {
+/* <section class="offer container"> */
+
+   .offer{
+      width: auto;
+      height: max-content;
+      padding: 2%;
+      position: static;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: space-between;
+      align-items: flex-start;
+     
+   }
+   .offer-holder{
+      position:static;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      z-index: 0;
+      background-size: 70% 90%;
+      background-position:left 50% top 80%;
+
+   }
+   .button-choose{
+      position:static; 
+
+   }
+   .offer-promo{
+      position: sticky;
+      top: 100%;
+   }
+   
+   .offer-list-container{
+      width: 100%;
+      position: relative;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      background-position: 
+        right -1% bottom,
+        right 5% bottom,
+        right 0% center,
+        right 25%  bottom 0;   
+      background-size: 
+         48%,
+         25%,
+         40%,
+         20%;
+     
+   }
+     .offer-list{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items:stretch;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+      gap: 5px;
+     }
+
+   .offer-list li{
+      display: inline-flex; 
+      justify-content: flex-start;
+      
+   }
+   
+   .list-border{
+      display: flex;
+      position:sticky;
+      padding: 1% 3%;
+      top:0;
+      left: 0;
+      width: max-content;
+   }
+   /*--------------------------------------------- */
+   /* <section class="motivation"> */
+   .motivation{
+      position:static;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;   
+      align-items: flex-start;
+      gap: 15px;
+      padding: 2%;
+   }
+   .motivation-box{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      flex: 1 1 auto;
+      gap:15px;
+      padding: 0;
+      margin: 0;
+   }
+  
+   
+   .number{
+      font-size: clamp(0.9rem, 3vw + 2rem, 2.2rem);
+
+   }
+   .motivation-text{
+      width: 100%;
+   }
+   .text-big{
+      width: 100%;
+      box-sizing: border-box;
+      overflow-wrap: break-word;
+     
+   }
+
+/*--------------------------------------------- */
+/* <section class = "courses> */
+   .courses{
+      position: static;
+      padding: 2%;
+      
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+  
+   .course-listbox{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;    
+      align-items: flex-end;
+      gap: 2vh;
+      margin: 2vh 0;
+   }
+
+   .list-courses{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;    
+      align-items: center;
+      gap: 15px;
+   }
+   .course-items {
+      text-decoration: none;
+      display: flex; 
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-between;
+      align-items: flex-start;
+      gap: 15px;
+      
+   }
+   .course-items {
+     
+      margin: 0;
+   }
+   .course-items .list-courses{
+      display: flex; 
+      flex-direction: column;
+      justify-items:center;
+      margin: 0;
+   }
+   .see-more{
+
+      padding: 2vh 0;
+      margin: 0;
+   }
+
+   .figures{
+      display: flex;
+      flex-wrap: wrap;      
+      justify-content:space-between;
+      align-items:flex-start;
+      
+   }
+
+
+   .course-block{
+      width: 40%;
+      display: block;
+      padding: 0;
+      margin: 0;
+   }
+   .image-figures{
+      width: 100%;
+      height: 80%;
+     
+   }
+   /*--------------------------------------------- */
+   /*<<section class="help"> */
+   .help{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;    
+      align-items: flex-start;
+      gap: 15px;
+      padding: 8% 2%;
+   }
+   .registration{
+      width: 100%;
+      padding: 2%;
+   }
+   /* ------------------------------------------------- */
+   
+}

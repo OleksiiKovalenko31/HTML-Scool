@@ -14,16 +14,16 @@
 </head>
 
 <body>
-    <header  class="container header">
+   <header  class="container header" role="banner">
        <div class="header-box"> 
-            <a class = "logo" href ="index.html"> 
+            <a class = "logo" href ="index.html" aria-label="Go to homepage"> 
                     <img src="img/logo.svg" alt="logo" width="50px" height="50px">
                         UpDate 
                 </a>                   
-            <nav class="nav">
+            <nav class="nav" aria-label="Main navigation">
                 
                 <ul class="nav-list">
-                    <li><a class="link" href="courses.html">Courses</a></li>
+                    <li><a class="link" href="courses.html" aria-current="page">Courses</a></li>
                     <li><a class="link" href="#">Teachers</a></li>
                     <li><a class="link" href="#">Blog</a></li>
                 </ul>
@@ -32,14 +32,33 @@
 
         <div class="btn-box">
             <div class="header-block">
-                <a class="header-link-block header-link" href="#">
-                    <span class="header-link-text">En</span>
-                    <span class="header-link-arrow">&#9660;</span>
-                </a>
+                <div class="header-link-block header-link" href="#">
+                    <details class="lang-dropdown" >
+                        
+                        <summary aria-haspopup="listbox" aria-label="Language selector">
+
+                            <span class="lang-text">English</span>
+                           
+                        </summary>
+                         <ul class="lang-list" role="listbox">
+                            <li><a href="#" role="option">English</a></li>
+                            <li><a href="#" role="option">Ukrainian</a></li>
+                            <li><a href="#" role="option">Deutche</a></li>
+                        </ul>
+                    </details>
+                  
+                    <!-- <span class="header-link-arrow">&#9660;</span> -->
+                </div>
                 <a class="header-link" href="#">Sign in</a>
             </div>
             
-            <a class="header-button" href="#">Trial free</a>
+            <button 
+                class="header-button" 
+                type="button"
+                aria-label="Start free trial"
+                >
+                Trial free
+            </button>
         </div>
         
     </header>
@@ -56,25 +75,30 @@
                     You will learn how to create a brand identity on the web and for printing. Learn how to work in Illustrator, Photoshop, InDesign and Figma.
                     Add posters, logos, merch design and other strong projects to your portfolio. Start a career in the studio or freelance.                
                 </p>
-                <button class="button-start"> Started</button>
+                <button class="button-start",
+                        type="button"
+                    > 
+                    Started
+                </button>
                 <div class="offer-promo">                   
-                    <p class="offer-sale"><b> 25% </b></p>  
+                    <p class="offer-sale" aria-label="Sales promo"><b> 25% </b></p>  
 
                     <p class="offer-time">
-                        <time class = "day"> 17 days</time>
-                        <time class = "time">17:44:16 </time>
+                        <time class = "day">17 days</time>
+
+                        <time class = "time">17:44:16</time>
                        
                     </p>  
                 </div>
             </article>
 
             <article class="offer-list-container ">          
-                <ul class="offer-list">
-                    <li> <a class="list-border invision" href="#"> InVision </a> </li>
-                    <li> <a class="list-border protopie" href="#"> ProtoPie </a> </li>
-                    <li> <a class="list-border miro" href="#"> Miro </a> </li>
-                    <li> <a class="list-border photoshop" href="#"> Photoshop </a> </li>
-                    <li> <a class="list-border figma" href="#"> Figma </a> </li>
+                <ul class="offer-list" aria-label="list of specialties">
+                    <li> <a class="list-border invision"    href="#"> InVision  </a> </li>
+                    <li> <a class="list-border protopie"    href="#"> ProtoPie  </a> </li>
+                    <li> <a class="list-border miro"        href="#"> Miro      </a> </li>
+                    <li> <a class="list-border photoshop"   href="#"> Photoshop </a> </li>
+                    <li> <a class="list-border figma"       href="#"> Figma     </a> </li>
                     <li> <a class="list-border illustrator" href="#"> Illustrator </a> </li>
                 </ul>            
             </article >
@@ -94,9 +118,10 @@
                 </div>
 
                 <div class="salary-box">
+                     
                    <p class="salary-price title"> 5 000 $ </p>
                     <div class="box-name">
-                        <p class="salary-text name">  Salary  </p>
+                        <p class="salary-text name" id="salary-label">  Salary  </p>
                     </div>
                    <p class="latin-description"> 
                        Nam libero tempore, cum soluta nobis est
@@ -114,7 +139,7 @@
                 </div>
             </article>  
             <div class="description">
-                <article class="portfolio-box description-box">
+                <article class="portfolio-box description-box" role="group">
                     <h2 class="portfolio-title description-title"> Portfolio</h2>
                     <p class="portfolio-text description-text"> 
                         You will learn how to create a brand identity on the web and for printing. Learn how to work in Illustrator, Photoshop, InDesign and Figma.
@@ -150,9 +175,9 @@
                         </ul> 
                     </div> 
                     <div class="price-box">
-                        <h3 class ="regular-price"> $12 000 </h3>
-                        <h3 class="discont"> $3 000 </h3>
-                        <button class="base-choose button-offer"> Choose </button>
+                        <h4 class ="regular-price"> $12 000 </h4>
+                        <h4 class="discont"> $3 000 </h4>
+                        <button class="base-choose button-offer" type="button"> Choose </button>
                     </div>
                 </article>
 
@@ -168,9 +193,9 @@
                         </ul>  
                     </div>
                     <div class="price-box">
-                        <h3 class="optimal-price regular-price"> $24 000 </h3>
-                        <h3 class="discont "> $6 000 </h3>
-                        <button class="optimal-choose button-offer"> Choose </button>
+                        <h4 class="optimal-price regular-price"> $24 000 </h4>
+                        <h4 class="discont "> $6 000 </h4>
+                        <button class="optimal-choose button-offer" type="button"> Choose </button>
                     </div>
                 </article>
 
@@ -186,9 +211,9 @@
                         </ul>  
                     </div>
                     <div class="price-box">
-                        <h3 class="regular-price"> $64 000 </h3>
-                        <h3 class="discont"> $18 000 </h3>
-                        <button class="premium-choose button-offer"> Choose </button>
+                        <h4 class="regular-price"> $64 000 </h4>
+                        <h4 class="discont"> $18 000 </h4>
+                        <button class="premium-choose button-offer" type="button"> Choose </button>
                     </div>
                 </article>
             </div>
@@ -197,7 +222,7 @@
 
     </main>
 
-    <footer class="wraper footer container">
+    <footer class="wraper footer container"> 
         
         <div class="footer-content-block">
             <div class="footer-support">

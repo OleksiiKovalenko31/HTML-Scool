@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
    /*<section class="offer">*/
    .offer{
       width: 100%;
@@ -14,13 +14,10 @@
       align-items: flex-start;
    }
     .offer-holder{
-      /* border: 2px solid #19191C; */
       width: 100%;
-      /* height: auto; */
       position:static;
       display: flex;
       flex-direction: column;
-      /* flex: 1 1 auto; */
       gap: 5px;
       padding: 0;
       z-index: 0;
@@ -37,7 +34,6 @@
    }
    .offer-title{
       position: static;
-      /* border: 2px solid #19191C; */
       z-index: 0;
    }
    .offer-discription{
@@ -55,7 +51,6 @@
    .offer-list-container{
       width: 100%;
       height: max-content;
-      /* border: 3px solid #19191C; */
       position: relative;
       left: 0;
       top: 0;
@@ -66,7 +61,7 @@
         right 0% center,
         right 25%  bottom 0;   
       background-size: 
-         45%,
+         38%,
          25%,
          40%,
          20%;
@@ -102,6 +97,7 @@
     /*--------------------------------------------- */
    /* <section class="profession-designer"> */
    .profession-designer{
+      box-sizing: border-box;
       margin: 0;
       padding: 2%;
    }
@@ -119,15 +115,29 @@
    /* ---------------------------------------------- */
    /* <section class="price"> */
    .price{
+      box-sizing: border-box;
       width: 100%;
       padding: 2%;
    }
-     .price-text{
+   .price-offer{
+      box-sizing: border-box;
+      padding: 10% 15%;
+      gap: 2%;
+   }
+   .price-text{
       width: 100%;
    }
    .price-offer-box{
       width: 100%;
       flex-direction: column;
    }
+   .list-offer-box li{
+      margin-bottom: 3%;
+       
+   }
+   .discont{
+      font: 700 58px/100% 'Inter';
+      font-size: clamp(3rem, 3vw + 1.2rem, 5rem); 
+   }  
 
 }

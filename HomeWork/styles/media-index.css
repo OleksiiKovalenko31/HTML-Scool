@@ -1,8 +1,15 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
 /* <section class="offer container"> */
-
+   .main{
+      width: 100%;
+   }
+   .title{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: clamp(2rem, 2vw + 1.2rem, 5rem);  
+   }
    .offer{
-      width: auto;
+      width: 100%;
       height: max-content;
       padding: 2%;
       position: static;
@@ -81,6 +88,8 @@
    /*--------------------------------------------- */
    /* <section class="motivation"> */
    .motivation{
+      box-sizing: border-box;
+      width: 100%;
       position:static;
       display: flex;
       flex-direction: column;
@@ -99,14 +108,22 @@
       padding: 0;
       margin: 0;
    }
-  
+   .list-of-names{
+      padding: 15px 0 0 0;
+   }
+  .number-s{
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content:left; 
+  }  
    
    .number{
-      font-size: clamp(0.9rem, 3vw + 2rem, 2.2rem);
+      font-size: clamp(0.9rem, 2.5vw + 2rem, 2.2rem);
 
    }
    .motivation-text{
       width: 100%;
+      gap: 0.5vh;
    }
    .text-big{
       width: 100%;
@@ -118,6 +135,8 @@
 /*--------------------------------------------- */
 /* <section class = "courses> */
    .courses{
+      box-sizing: border-box;
+      width: 100%;
       position: static;
       padding: 2%;
       
@@ -126,20 +145,21 @@
    }
   
    .course-listbox{
-      display: flex;
+      /* display: flex; */
       flex-direction: column;
-      justify-content:space-between;    
+      /* justify-content:space-between;     */
       align-items: flex-end;
-      gap: 2vh;
-      margin: 2vh 0;
+      gap:10px;
+      margin: 1vh 0;
    }
 
    .list-courses{
+      /* width: 100%; */
       display: flex;
       flex-direction: column;
       justify-content: center;    
       align-items: center;
-      gap: 15px;
+      justify-content: space-between;
    }
    .course-items {
       text-decoration: none;
@@ -190,16 +210,25 @@
    /*--------------------------------------------- */
    /*<<section class="help"> */
    .help{
+      box-sizing: border-box;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;    
       align-items: flex-start;
-      gap: 15px;
-      padding: 8% 2%;
+      gap: 0.5%;
+      padding:3% 2%;
    }
    .registration{
+      box-sizing: border-box;
       width: 100%;
       padding: 2%;
+   }
+   .registration-text{
+      width: 100%;
+      padding: 1.5%  0;
+      margin: 3% 0;
+      /* box-sizing: border-box; */
    }
    /* ------------------------------------------------- */
    

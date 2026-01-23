@@ -204,8 +204,23 @@
     gap: 26px; 
 }
 
+.list-of-names{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 100px;
+   }
+
+.number-s{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+
 .number-box{
     height: auto;
+    text-align: center;
+     
 }
 
 .number{
@@ -215,18 +230,19 @@
 
  .line{
     width: 178px;
-    color:#FBFBFC    
+    color:#d6db8bc5    
  }
 
  /* ------------------------------------- */
  /* <section class = "courses"> */
   
 .courses{
+    background: #ccc8b5e7;
     font: 700 58px/28px 'Inter';
     color:#19191C;
     display: flex;
     flex-direction: column;
-    padding: 168px 0;
+    padding: 168px 240px 159px 240px;
 }
 
 .course-listbox{
@@ -253,7 +269,7 @@
     font: 700 18px/100% 'Inter';
     color: #19191C;
     text-decoration: none;
-    top: bottom;
+    
 
   
 }
@@ -330,7 +346,7 @@
 }
 input::placeholder {
   font: 400 18px/28px 'Inter';
-  color: #19191C;
+  color: #a3a3af;
   opacity: 1; 
 }
 .help-button{
@@ -343,6 +359,25 @@ input::placeholder {
     width: max-content;
 }
 
+.form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input:focus-visible{
+    outline: 2px solid #5b47ff;
+    outline-offset: 3px;
+}
+
+.input:invalid{
+    border:2px solid #d93025;
+}
+
+.label {
+    font-weight: 500;
+    
+}
 
 
 

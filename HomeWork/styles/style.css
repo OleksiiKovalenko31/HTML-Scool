@@ -30,14 +30,8 @@ body{
     
 }
 
-.btn-box{
-   
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-      
-   }
+
+
 
 .nav-list{
     
@@ -62,8 +56,9 @@ body{
     width: 30%;
     display: flex;
     gap: 48px;
+    flex-direction: row;
+    justify-content:space-between;
     align-items: center;
-   
    
 }
 .header-block{
@@ -95,7 +90,7 @@ body{
 }   
 
 .header-button{
-    background: #19191C;;
+    background: #19191C;
     color: #EFEFF2;
     padding: 12px 37px;
     padding: 2% ;
@@ -105,6 +100,111 @@ body{
     font-weight: 700;
 
 }
+
+/* --EN-- */
+
+/* Контейнер */
+lang-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+/* Ховаємо стандартний маркер summary */
+lang-dropdown summary {
+    list-style: none;
+}
+
+lang-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Summary стилі */
+lang-dropdown summary {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+lang-dropdown summary:hover {
+    background: #f3f3f3;
+}
+
+/* Стрілка з анімацією */
+lang-dropdown[open] .arrow {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    transition: transform 0.5s ease;
+}
+
+/* Випадаючий список */
+.lang-list {
+    position:sticky;
+    top: 100%;
+    left: 0;
+    margin-top: 6px;
+    padding: 8px 0;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    list-style: none;
+    min-width: 100%;
+    z-index: 50;
+}
+
+
+/* Елементи списку */
+.lang-list li a {
+    display: block;
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.lang-list li a:hover {
+    background: #efefef;
+}
+
+.lang-list li{
+    list-style: none;
+}
+
+.lang-list li:focus{
+    outline: none;
+}
+
+/* Видимий фокус для клавіатури */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible{
+    outline: 2px solid #5b47ff;
+    outline-offset: 4px;
+}
+
+/* Hover */
+a:hover,
+button:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Active */    
+button:active {
+  transform: scale(0.97);
+}
+
 /* -------------------------- */
 /* <footer class="wraper footer container"> */
  
@@ -121,7 +221,6 @@ body{
 .wraper{
     display: flex;
     flex-direction: column;
-    /* height: 476px;  */
     justify-content: space-between;
     padding: 68px 240px 0 240px;
     margin: 0 auto;
@@ -131,7 +230,6 @@ body{
 .footer-content-block{
     /* border: 3px solid #491a37; */
     display: flex;
-    /* flex: ; */
     justify-content: space-between;
 
 }

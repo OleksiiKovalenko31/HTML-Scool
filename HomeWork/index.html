@@ -14,16 +14,16 @@
 </head>
 
 <body>
-    <header  class="container header">
+    <header  class="container header" role="banner">
        <div class="header-box"> 
-            <a class = "logo" href ="index.html"> 
+            <a class = "logo" href ="index.html" aria-label="Go to homepage"> 
                     <img src="img/logo.svg" alt="logo" width="50px" height="50px">
                         UpDate 
                 </a>                   
-            <nav class="nav">
+            <nav class="nav" aria-label="Main navigation">
                 
                 <ul class="nav-list">
-                    <li><a class="link" href="courses.html">Courses</a></li>
+                    <li><a class="link" href="courses.html" aria-current="page">Courses</a></li>
                     <li><a class="link" href="#">Teachers</a></li>
                     <li><a class="link" href="#">Blog</a></li>
                 </ul>
@@ -32,31 +32,55 @@
 
         <div class="btn-box">
             <div class="header-block">
-                <a class="header-link-block header-link" href="#">
-                    <span class="header-link-text">En</span>
-                    <span class="header-link-arrow">&#9660;</span>
-                </a>
+                <div class="header-link-block header-link" href="#">
+                    <details class="lang-dropdown" >
+                        
+                        <summary aria-haspopup="listbox" aria-label="Language selector">
+
+                            <span class="lang-text">English</span>
+                           
+                        </summary>
+                         <ul class="lang-list" role="listbox">
+                            <li><a href="#" role="option">English</a></li>
+                            <li><a href="#" role="option">Ukrainian</a></li>
+                            <li><a href="#" role="option">Deutche</a></li>
+                        </ul>
+                    </details>
+                  
+                    <!-- <span class="header-link-arrow">&#9660;</span> -->
+                </div>
                 <a class="header-link" href="#">Sign in</a>
             </div>
             
-            <a class="header-button" href="#">Trial free</a>
+            <button 
+                class="header-button" 
+                type="button"
+                aria-label="Start free trial"
+                >
+                Trial free
+            </button>
         </div>
         
     </header>
 
-     <main>
+     <main class="main">
         <section class="offer container">
-            <article class="offer-holder ">
-                <h1 class = "offer-title title"> Explore thousands of hands-on creative classes. </h1>
+            <article class="offer-holder">
+
+                <h1 class = "offer-title title" > Explore thousands of hands-on creative classes. </h1>
                 
                 <p class="offer-discription">
-                    Start learning for <a class = "link-free" href ="#"> free </a>
+                    Start learning for <a class = "link-free" href ="#" aria-label="Start learning for free"> free </a>
                 </p>
                 
-                <button class="button-choose"> Choose a course </button>
+                <button class="button-choose",
+                        type="button"
+                >  
+                     Choose a course
+               </button>
 
                 <div class="offer-promo"> 
-                    <p class="offer-sale"> 50% </p> 
+                    <p class="offer-sale" aria-label="Sales promo"> 50% </p> 
                         <P class="offer-time">
                             <time class = "day"> 24 days</time>
                             <time class = "time">17:44:16 </time>
@@ -64,13 +88,13 @@
                 </div>
             </article>
                 <div class="offer-list-container">
-                    <ul class="offer-list">
-                        <li> <a class = "list-border marketer" href="#"> Marketer </a> </li>                         
-                        <li> <a class = "list-border illustrator" href="#"> Illustrator </a> </li>
-                        <li> <a class = "list-border animator" href="#"> Animator </a> </li>
-                        <li> <a class = "list-border programmer" href="#"> Programmer </a> </li>
-                        <li> <a class = "list-border desinger" href="#"> Desiger </a> </li>
-                        <li> <a class = "list-border photographer" href="#"> Photographer </a> </li>
+                    <ul class="offer-list" aria-label="list of specialties">
+                        <li> <a class = "list-border marketer"      href="#"> Marketer      </a> </li>                         
+                        <li> <a class = "list-border illustrator"   href="#"> Illustrator   </a> </li>
+                        <li> <a class = "list-border animator"      href="#"> Animator      </a> </li>
+                        <li> <a class = "list-border programmer"    href="#"> Programmer    </a> </li>
+                        <li> <a class = "list-border desinger"      href="#"> Desiger       </a> </li>
+                        <li> <a class = "list-border photographer"  href="#"> Photographer  </a> </li>
                     </ul> 
                 </div>
         </section>
@@ -89,27 +113,31 @@
                     </p>                    
                 </div>
             </article>
-
-            <article class="number-box">
-              
-                <h3 class="number"> 56 </h3>
-                <p class="name"> Courses </p>
-                <hr class="line">
-               
-            </article>  
-
-            <article class="number-box">
-              
-                <h3 class="number"> 108 </h3>
-                <p class="name"> Curators </p>
-                <hr class="line">
-               
-            </article> 
-                <article class="number-box">
-                
-                    <h3 class="number"> 3 723 </h3>
-                    <p class="name"> Graduates </p>
-                    <hr class="line">
+            <div class="list-of-names">
+                <h3 class="title motivation-title" >We have:</h3>
+            
+                <div class="number-s"> 
+                    <article class="number-box">
+                        <h4 class="number"> 56 </h4>
+                        <p class="name"> Courses </p>
+                        <hr class="line">
+                    
+                    </article>
+                    <article class="number-box">
+                    
+                        <h4 class="number"> 108 </h4>
+                        <p class="name"> Curators </p>
+                        <hr class="line">
+                    
+                    </article>
+                        <article class="number-box">
+                    
+                            <h4 class="number"> 3 723 </h4>
+                            <p class="name"> Graduates </p>
+                            <hr class="line">
+                        </article>
+                </div>
+            </div>
 
         </section>
 
@@ -118,37 +146,37 @@
             <article class="course-listbox">
               <ul class="course-items">
                 <a class="list-popular" href = "#"> Popular </a>
-                <a class="list-courses" herf = "#"> Animation </a>
-                <a class="list-courses" herf = "#"> Design </a>
-                <a class="list-courses" herf = "#"> Illustration </a>
-                <a class="list-courses" herf = "#"> Programming </a>
-                <a class="list-courses" herf = "#"> Photo & Film </a>
-                <a class="list-courses" herf = "#"> Marketing </a>
+                <a class="list-courses" href = "#"> Animation </a>
+                <a class="list-courses" href = "#"> Design </a>
+                <a class="list-courses" href = "#"> Illustration </a>
+                <a class="list-courses" href = "#"> Programming </a>
+                <a class="list-courses" href = "#"> Photo & Film </a>
+                <a class="list-courses" href = "#"> Marketing </a>
               </ul>
 
              <p class="see-more">See more &rarr;</p>      
             </article>
             <div class="figures">
                 <article class = "course-block">
-                    <img class="image-figures" src="img/image Sales marketing polygons.jpg" alt="polygons">
+                    <img class="image-figures" src="img/image Sales marketing polygons.jpg" alt="polygons" aria-hidden="true">
                     <p class="course-text"> Sales Marketing </p>
                     <p class="course-time"> 6 mounts </p>
                 </article>
 
                 <article class = "course-block">
-                    <img class="image-figures" src="img/image data analytics rectange.jpg" alt="rectange">
+                    <img class="image-figures" src="img/image data analytics rectange.jpg" alt="rectange" aria-hidden="true">
                     <p class="course-text"> Data analytics </p>
                     <p class="course-time"> 9 mounts </p>
                 </article>
 
                 <article class = "course-block">
-                    <img class="image-figures" src="img/image design art elipse.jpg" alt="elipse">
+                    <img class="image-figures" src="img/image design art elipse.jpg" alt="elipse" aria-hidden="true">
                     <p class="course-text"> Design art</p>
                     <p class="course-time"> 4 mounts </p>
                 </article>
 
                 <article class = "course-block">
-                    <img class="image-figures" src="img/image animation rectange.png" alt="rectange">
+                    <img class="image-figures" src="img/image animation rectange.png" alt="rectange" aria-hidden="true">
                     <p class="course-text">Animation</p>
                     <p class="course-time"> 8 mounts </p>
                 </article>
@@ -157,21 +185,54 @@
         
         <section class="help container">
             <div class="help-textbox">
-                <h2 class="title"> Can't find a suitable program? </h2>
+                <h2 id="help-title" class="title">
+                    Can't find a suitable program? 
+                </h2>
                 <p class="help-text"> We will help you with the choice </p>
             </div>
-            <div class = "registration">
-                <input class="registration-text" type="text" placeholder="Name">
+
+            <form class = "registration" aria-labelledby="help-title">
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input 
+                        id="name"
+                        class="registration-text",
+                        type="text",
+                        placeholder="Pleas enter a Name"
+                        required
+                        aria-required="true"                
+                        aria-describedby="email-hint"
+                    >
+                    <small id="email-hint">Pleas enter a Name</small>
+                    
+                </div>
              
-                <input class="registration-text" type="email" placeholder="Email">
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input
+                        id="email",
+                        class="registration-text",
+                        type="email",
+                        placeholder="leas enter a email address",
+                        required
+                        aria-required="true",
+                        aria-describedby="email-hint"
+                    >
+                    <small id="email-hint">Pleas enter a valid email address </small>
+                </div>
                 
-                <button class="help-button"> Help me </button>
-            </div>
+                <button
+                    class="help-button",
+                    aria-label="Send help request"
+                    > 
+                    Help me
+                </button>
+
+            </form>
             
         </section>
     </main>
-    
-    <footer class="wraper footer container">
+    <footer class="wraper footer container"> 
         
         <div class="footer-content-block">
             <div class="footer-support">

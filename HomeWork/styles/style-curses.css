@@ -49,6 +49,7 @@
 }
 
 
+
 .offer-holder {
     width: 648px; 
     height: 595.4px;
@@ -98,7 +99,7 @@
 
 .button-start{
     border: none;
-    background:#504DEE;
+    background:#504df1;
     width: max-content;
    
     font-family: 'Inter';

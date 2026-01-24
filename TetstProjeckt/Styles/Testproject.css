@@ -1,0 +1,155 @@
+@media screen /*and (max-width: 1220px)*/ {
+  body{
+    width: 99%;
+  }
+  .block{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;       /* враховує border та padding */
+    font: 400 36px/100% "Pacifico", serif;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+
+    background: #8e8eec;
+    border: 5px solid #07075e;
+    border-radius: 20px;
+    overflow-wrap: break-word;    /* переносить довгі слова */
+    margin: 0;                    /* прибирає дефолтні відступи */
+    padding: 0;
+  }
+ 
+ .border{
+  
+    padding: 1%;
+}
+/*_________________________*/
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  .text {
+    display: none;
+    margin-top: 10px;
+    color: green;
+  }
+
+  #toggle:checked + .btn {
+    background: green;
+  }
+
+  #toggle:checked ~ .text{
+    display: block;
+  }
+
+  /*_____________________________*/
+
+  .title {
+    display: block;
+    padding: 10px;
+    /* background: #eee; */
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .content {
+    display: none;
+    padding: 10px;
+    /* background: #fafafa; */
+  }
+
+  /* реакція */
+  #acc1:checked ~ .content {
+    display: block;
+    /* background: #fafafa; */
+  }
+  /*________________________________*/
+  
+  .brod2{
+    /* content:none; */
+    
+    /* border: 2px solid #d4841c; */
+    border-radius: 10vh;
+    width: max-content;
+    height: max-content;
+   
+  }
+  .brod2:hover {
+
+    width: 100%;
+    /* border-radius: 20px; */
+    /* border: none; */
+    width: 100%;
+    height: max-content;
+    box-sizing: border-box;       /* враховує border та padding */
+    font: 400 36px/100% "Pacifico", serif;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+  }
+  .brod2:hover .content{
+    display: contents;
+
+  }
+  
+/*_______________________________________*/
+.box {
+  width: auto;
+  height: max-content;
+  margin: 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+  line-height: 35px;
+  font-size: 16px;
+}
+
+.display-none {
+  display: none;
+}
+
+.box2 {
+  width: auto;
+  height: auto;
+  margin: 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.box3 {
+  width: auto;
+  height: min-content;
+  margin: 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  transition: opacity 0.9s ease, visibility 1s linear 0.5s;
+}
+
+.visibility-anim {
+  opacity: 1;
+  visibility: visible;
+}
+
+.visibility-anim.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+}
